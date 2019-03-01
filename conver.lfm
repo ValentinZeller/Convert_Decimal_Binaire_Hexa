@@ -1,0 +1,88 @@
+object Fconvert: TFconvert
+  Left = 475
+  Height = 300
+  Top = 134
+  Width = 312
+  Caption = 'Convertisseur'
+  ClientHeight = 300
+  ClientWidth = 312
+  DesignTimePPI = 120
+  LCLVersion = '1.8.4.0'
+  object BtnConv: TButton
+    Left = 23
+    Height = 31
+    Top = 192
+    Width = 80
+    Caption = 'Convertir'
+    OnClick = BtnConvClick
+    TabOrder = 0
+  end
+  object ValBin: TLabel
+    Left = 144
+    Height = 20
+    Top = 80
+    Width = 64
+    Caption = '00000000'
+    ParentColor = False
+  end
+  object ValHex: TLabel
+    Left = 196
+    Height = 20
+    Top = 120
+    Width = 16
+    Caption = '00'
+    ParentColor = False
+  end
+  object LbDec: TLabel
+    Left = 48
+    Height = 20
+    Top = 24
+    Width = 55
+    Caption = 'Décimal'
+    ParentColor = False
+  end
+  object LbBin: TLabel
+    Left = 48
+    Height = 20
+    Top = 80
+    Width = 46
+    Caption = 'Binaire'
+    ParentColor = False
+  end
+  object LbHex: TLabel
+    Left = 48
+    Height = 20
+    Top = 120
+    Width = 87
+    Caption = 'Hexadécimal'
+    ParentColor = False
+  end
+  object EditDec: TSpinEditEx
+    Left = 128
+    Height = 28
+    Top = 24
+    Width = 88
+    MaxLength = 0
+    TabOrder = 1
+    MaxValue = 255
+    NullValue = 0
+  end
+  object BtnRAZ: TButton
+    Left = 112
+    Height = 31
+    Top = 192
+    Width = 68
+    Caption = 'RAZ'
+    OnClick = BtnRAZClick
+    TabOrder = 2
+  end
+  object BtnQuit: TButton
+    Left = 192
+    Height = 31
+    Top = 192
+    Width = 94
+    Caption = 'Quitter'
+    OnClick = BtnQuitClick
+    TabOrder = 3
+  end
+end
